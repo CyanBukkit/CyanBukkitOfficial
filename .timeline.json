@@ -97,8 +97,17 @@
       "cmd": "pnpm add -D @babel/core @babel/eslint-parser @babel/preset-env && pnpm run dev",
       "timeline_index": 30,
       "version": "v1",
-      "status": "success",
-      "logs": []
+      "status": "initializing",
+      "logs": [
+        "\n",
+        "\n",
+        "> studio_portfolio_site@0.0.1 dev /data/chats/4whzj/workspace/vue_template\n",
+        "> vite\n",
+        "\n",
+        "\n",
+        "  VITE v4.5.9  ready in 500 ms\n",
+        "\n"
+      ]
     }
   },
   "deploy": {},
