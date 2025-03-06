@@ -1,7 +1,14 @@
+<!-- src/App.vue -->
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <router-view></router-view>
 </template>
 
-<script setup></script>
+<script setup>
+// Component logic here if needed
+</script>
 
-<style></style>
+<style>
+#app {
+  min-height: 100vh;
+}
+</style>
