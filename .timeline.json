@@ -1,9 +1,26 @@
 {
-  "timeline_index": 1,
-  "planner": {},
+  "timeline_index": 2,
+  "planner": {
+    "Team Leader": {
+      "1": {
+        "task_id": "1",
+        "dependent_task_ids": [],
+        "instruction": "Create a product requirement document (PRD) for the studio website, including detailed page layouts and functionalities for homepage (studio achievements), sample gallery (signed authors' works and prices), plugin portfolio (large project customization achievements), about us (team member introductions), partnerships & agencies (cooperation display), and financial disclosure (quarterly revenue reports).",
+        "task_type": "general",
+        "code": "",
+        "result": "",
+        "is_success": false,
+        "is_finished": false,
+        "assignee": "Emma",
+        "start_at": 1741266565.034189
+      },
+      "current_task_id": "1"
+    }
+  },
   "gallery_last_file": {},
   "timeline_status": {
-    "1": 1
+    "1": 1,
+    "2": 1
   },
   "preview_servers": {},
   "deploy": {},
