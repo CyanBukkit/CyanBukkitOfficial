@@ -73,7 +73,7 @@ const portfolio = ref([
     description: '专业商品摄影，包含10张精修图片',
     price: 2999,
     category: 'photography',
-    image: '<tool_call>ImageGetter.get(search_term="professional product photography", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/portfolio1.jpg", mode="search")</tool_call>',
+    image: '/assets/images/portfolio1.jpg',
     tags: ['商品摄影', '电商']
   },
   {
@@ -82,7 +82,7 @@ const portfolio = ref([
     description: '品牌VI设计，包含logo和基础应用设计',
     price: 9999,
     category: 'design',
-    image: '<tool_call>ImageGetter.get(search_term="brand identity design", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/portfolio2.jpg", mode="search")</tool_call>',
+    image: '/assets/images/portfolio2.jpg',
     tags: ['品牌设计', 'VI设计']
   },
   {
@@ -91,7 +91,7 @@ const portfolio = ref([
     description: '5分钟企业形象片拍摄制作',
     price: 19999,
     category: 'video',
-    image: '<tool_call>ImageGetter.get(search_term="corporate video production", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/portfolio3.jpg", mode="search")</tool_call>',
+    image: '/assets/images/portfolio3.jpg',
     tags: ['视频制作', '企业宣传']
   }
 ]);

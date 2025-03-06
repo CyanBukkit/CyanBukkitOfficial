@@ -61,7 +61,7 @@ import MainLayout from '../components/layout/MainLayout.vue';
 const featuredProject = ref({
   title: '智能数据分析平台',
   description: '为企业提供全方位的数据分析解决方案，包括数据可视化、预测分析和实时监控等功能。',
-  image: '<tool_call>ImageGetter.get(search_term="data analysis dashboard interface", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/featured-project.jpg", mode="search")</tool_call>',
+  image: '/assets/images/featured-project.jpg',
   techStack: ['Vue.js', 'Node.js', 'TensorFlow', 'Docker']
 });
 
@@ -70,21 +70,21 @@ const projects = ref([
     id: 1,
     title: '电商数据分析插件',
     description: '集成多平台数据，提供销售趋势分析',
-    image: '<tool_call>ImageGetter.get(search_term="e-commerce analytics dashboard", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/plugin1.jpg", mode="search")</tool_call>',
+    image: '/assets/images/plugin1.jpg',
     techStack: ['Vue.js', 'Python', 'MySQL']
   },
   {
     id: 2,
     title: '社交媒体管理工具',
     description: '多平台内容管理和数据分析',
-    image: '<tool_call>ImageGetter.get(search_term="social media management dashboard", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/plugin2.jpg", mode="search")</tool_call>',
+    image: '/assets/images/plugin2.jpg',
     techStack: ['React', 'Node.js', 'MongoDB']
   },
   {
     id: 3,
     title: '在线教育平台插件',
     description: '课程管理和学习追踪系统',
-    image: '<tool_call>ImageGetter.get(search_term="online education platform interface", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/plugin3.jpg", mode="search")</tool_call>',
+    image: '/assets/images/plugin3.jpg',
     techStack: ['Vue.js', 'Django', 'PostgreSQL']
   }
 ]);

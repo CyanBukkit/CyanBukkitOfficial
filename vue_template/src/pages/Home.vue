@@ -51,12 +51,12 @@ const banners = ref([
   {
     title: '创意无限',
     description: '专业的创意团队，为您打造独特的视觉体验',
-    image: '<tool_call>ImageGetter.get(search_term="creative studio workspace with modern equipment", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/banner1.jpg", mode="search")</tool_call>'
+    image: '/assets/images/banner1.jpg'
   },
   {
     title: '技术革新',
     description: '引领行业技术发展，创造无限可能',
-    image: '<tool_call>ImageGetter.get(search_term="modern technology and innovation workspace", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/banner2.jpg", mode="search")</tool_call>'
+    image: '/assets/images/banner2.jpg'
   }
 ]);
 
@@ -72,19 +72,19 @@ const latestWorks = ref([
     id: 1,
     title: '创意摄影',
     description: '2024最新摄影作品',
-    image: '<tool_call>ImageGetter.get(search_term="professional photography artwork", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/work1.jpg", mode="search")</tool_call>'
+    image: '/assets/images/work1.jpg'
   },
   {
     id: 2,
     title: '品牌设计',
     description: '全新品牌视觉系统',
-    image: '<tool_call>ImageGetter.get(search_term="brand design showcase", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/work2.jpg", mode="search")</tool_call>'
+    image: '/assets/images/work2.jpg'
   },
   {
     id: 3,
     title: '网站开发',
     description: '响应式企业官网',
-    image: '<tool_call>ImageGetter.get(search_term="responsive website design", image_save_path="/data/chats/4whzj/workspace/vue_template/public/assets/images/work3.jpg", mode="search")</tool_call>'
+    image: '/assets/images/work3.jpg'
   }
 ]);
 </script>
