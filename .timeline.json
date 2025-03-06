@@ -1,1 +1,106 @@
-{"timeline_index": 40, "planner": {"Team Leader": {"1": {"task_id": "1", "dependent_task_ids": [], "instruction": "Create a product requirement document (PRD) for the studio website, including detailed page layouts and functionalities for homepage (studio achievements), sample gallery (signed authors' works and prices), plugin portfolio (large project customization achievements), about us (team member introductions), partnerships & agencies (cooperation display), and financial disclosure (quarterly revenue reports).", "task_type": "general", "code": "", "result": "", "is_success": false, "is_finished": true, "assignee": "Emma", "start_at": 1741266565.034189, "end_at": 1741266752.1985276}, "current_task_id": "3", "2": {"task_id": "2", "dependent_task_ids": ["1"], "instruction": "Develop a studio website using Vue 3, Vite, and Ant Design. The website should include: \n1. Homepage with studio achievements gallery\n2. Sample gallery page showing signed authors' works and prices\n3. Plugin portfolio page displaying large customized projects\n4. About Us page with team member details\n5. Partnerships & Agencies page\n6. Financial disclosure page with quarterly reports\nFollow the PRD at '/data/chats/4whzj/workspace/docs/prd.json' for detailed requirements.", "task_type": "general", "code": "", "result": "", "is_success": false, "is_finished": true, "assignee": "Alex", "start_at": 1741266752.2191055, "end_at": 1741267343.8571253}, "3": {"task_id": "3", "dependent_task_ids": ["2"], "instruction": "Add a sample person profile to the About Us page. The profile should include:\n1. Name and title/position\n2. Working hours\n3. Skills and expertise\n4. Work responsibilities\n\nPlease update the existing website at https://studio-portfolio-4oxd4d-4whzj-7ee15d.mgx.dev", "task_type": "general", "code": "", "result": "", "is_success": false, "is_finished": true, "assignee": "Alex", "start_at": 1741267343.8571346, "end_at": 1741267500.445942}}}, "gallery_last_file": {}, "timeline_status": {"1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "10": 1, "11": 1, "12": 1, "13": 1, "14": 1, "15": 1, "16": 1, "17": 1, "18": 1, "19": 0, "21": 1, "22": 1, "23": 1, "24": 1, "25": 1, "26": 1, "27": 1, "29": 1, "30": 0, "31": 1, "32": 1, "33": 1, "34": 1, "35": 1, "36": 1, "37": 1, "38": 1, "39": 1, "40": 1}, "preview_servers": {"f6ccfe95-d4c3-41f1-978f-18a8707ee15d": {"role": "Alex", "port": 5173, "subdomain": "studio-portfolio-4oxd4d-4whzj-7ee15d", "server": "0a61ac58-30fe-43b9-9e98-74d815b5f96e", "cmd": "pnpm add -D @babel/core @babel/eslint-parser @babel/preset-env && pnpm run dev", "timeline_index": 30, "version": "v1", "status": "success", "logs": []}}, "deploy": {}, "next_version": "v3"}
+{
+  "timeline_index": 40,
+  "planner": {
+    "Team Leader": {
+      "1": {
+        "task_id": "1",
+        "dependent_task_ids": [],
+        "instruction": "Create a product requirement document (PRD) for the studio website, including detailed page layouts and functionalities for homepage (studio achievements), sample gallery (signed authors' works and prices), plugin portfolio (large project customization achievements), about us (team member introductions), partnerships & agencies (cooperation display), and financial disclosure (quarterly revenue reports).",
+        "task_type": "general",
+        "code": "",
+        "result": "",
+        "is_success": false,
+        "is_finished": true,
+        "assignee": "Emma",
+        "start_at": 1741266565.034189,
+        "end_at": 1741266752.1985276
+      },
+      "current_task_id": "3",
+      "2": {
+        "task_id": "2",
+        "dependent_task_ids": [
+          "1"
+        ],
+        "instruction": "Develop a studio website using Vue 3, Vite, and Ant Design. The website should include: \n1. Homepage with studio achievements gallery\n2. Sample gallery page showing signed authors' works and prices\n3. Plugin portfolio page displaying large customized projects\n4. About Us page with team member details\n5. Partnerships & Agencies page\n6. Financial disclosure page with quarterly reports\nFollow the PRD at '/data/chats/4whzj/workspace/docs/prd.json' for detailed requirements.",
+        "task_type": "general",
+        "code": "",
+        "result": "",
+        "is_success": false,
+        "is_finished": true,
+        "assignee": "Alex",
+        "start_at": 1741266752.2191055,
+        "end_at": 1741267343.8571253
+      },
+      "3": {
+        "task_id": "3",
+        "dependent_task_ids": [
+          "2"
+        ],
+        "instruction": "Add a sample person profile to the About Us page. The profile should include:\n1. Name and title/position\n2. Working hours\n3. Skills and expertise\n4. Work responsibilities\n\nPlease update the existing website at https://studio-portfolio-4oxd4d-4whzj-7ee15d.mgx.dev",
+        "task_type": "general",
+        "code": "",
+        "result": "",
+        "is_success": false,
+        "is_finished": true,
+        "assignee": "Alex",
+        "start_at": 1741267343.8571346,
+        "end_at": 1741267500.445942
+      }
+    }
+  },
+  "gallery_last_file": {},
+  "timeline_status": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 0,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1,
+    "29": 1,
+    "30": 0,
+    "31": 1,
+    "32": 1,
+    "33": 1,
+    "34": 1,
+    "35": 1,
+    "36": 1,
+    "37": 1,
+    "38": 1,
+    "39": 1,
+    "40": 1
+  },
+  "preview_servers": {
+    "f6ccfe95-d4c3-41f1-978f-18a8707ee15d": {
+      "role": "Alex",
+      "port": 5173,
+      "subdomain": "studio-portfolio-4oxd4d-4whzj-7ee15d",
+      "server": "0a61ac58-30fe-43b9-9e98-74d815b5f96e",
+      "cmd": "pnpm add -D @babel/core @babel/eslint-parser @babel/preset-env && pnpm run dev",
+      "timeline_index": 30,
+      "version": "v1",
+      "status": "success",
+      "logs": []
+    }
+  },
+  "deploy": {},
+  "next_version": "v3"
+}
