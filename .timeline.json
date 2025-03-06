@@ -62,7 +62,19 @@
     "29": 1,
     "30": 0
   },
-  "preview_servers": {},
+  "preview_servers": {
+    "f6ccfe95-d4c3-41f1-978f-18a8707ee15d": {
+      "role": "Alex",
+      "port": 5173,
+      "subdomain": "studio-portfolio-4oxd4d-4whzj-7ee15d",
+      "server": "0a61ac58-30fe-43b9-9e98-74d815b5f96e",
+      "cmd": "pnpm add -D @babel/core @babel/eslint-parser @babel/preset-env && pnpm run dev",
+      "timeline_index": 30,
+      "version": "v1",
+      "status": "success",
+      "logs": []
+    }
+  },
   "deploy": {},
   "next_version": "v1"
 }
