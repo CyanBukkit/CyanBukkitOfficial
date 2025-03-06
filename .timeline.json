@@ -1,5 +1,5 @@
 {
-  "timeline_index": 23,
+  "timeline_index": 24,
   "planner": {
     "Team Leader": {
       "1": {
@@ -54,7 +54,8 @@
     "19": 0,
     "21": 1,
     "22": 1,
-    "23": 1
+    "23": 1,
+    "24": 0
   },
   "preview_servers": {},
   "deploy": {},
