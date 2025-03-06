@@ -1,5 +1,5 @@
 {
-  "timeline_index": 39,
+  "timeline_index": 40,
   "planner": {
     "Team Leader": {
       "1": {
@@ -41,9 +41,10 @@
         "code": "",
         "result": "",
         "is_success": false,
-        "is_finished": false,
+        "is_finished": true,
         "assignee": "Alex",
-        "start_at": 1741267343.8571346
+        "start_at": 1741267343.8571346,
+        "end_at": 1741267500.445942
       }
     }
   },
@@ -84,7 +85,8 @@
     "36": 1,
     "37": 1,
     "38": 1,
-    "39": 1
+    "39": 1,
+    "40": 1
   },
   "preview_servers": {
     "f6ccfe95-d4c3-41f1-978f-18a8707ee15d": {
