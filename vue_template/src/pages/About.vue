@@ -78,6 +78,15 @@ const technical = ref([
     skills: ['Figma', 'Adobe XD', 'Sketch', '用户研究'],
     workTime: '周一至周五 10:00-19:00',
     description: '4年设计经验，专注于用户体验设计和交互设计，曾主导多个大型项目的界面设计'
+  },
+  {
+    id: 6,
+    name: '吴工程师',
+    title: 'UI/UX设计师',
+    avatar: '/assets/images/tech1.jpg',
+    skills: ['Figma', 'Adobe XD', 'Sketch', '用户研究'],
+    workTime: '周一至周五 10:00-19:00',
+    description: '4年设计经验，专注于用户体验设计和交互设计，曾主导多个大型项目的界面设计'
   }
 ]);
 
