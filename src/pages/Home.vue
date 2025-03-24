@@ -61,10 +61,10 @@ const banners = ref([
 ]);
 
 const stats = ref([
-  { title: '完成项目', value: '500+' },
-  { title: '合作客户', value: '200+' },
-  { title: '团队成员', value: '50+' },
-  { title: '获得奖项', value: '30+' }
+  { title: '完成订单', value: '100+' },
+  { title: '合作客户', value: '50+' },
+  { title: '团队成员', value: '5' },
+  { title: '吹牛皮数', value: '0' }
 ]);
 
 const latestWorks = ref([
