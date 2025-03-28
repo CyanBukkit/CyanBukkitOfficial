@@ -70,34 +70,35 @@ const formState = ref({
 
 const techPartners = ref([
   {
-    name: '科技创新公司',
-    logo: '/assets/images/tech-partner1.jpg',
-    description: '提供先进的技术支持和解决方案'
+    name: '丹阳剑客网络有限公司',
+    logo: 'https://cloud.swordsman.com.cn/images/r99950x.webp',
+    description: '一家优秀的有着悠久历史的服务器提供租用服务以及方案策划的公司',
+    link: 'https://cloud.swordsman.com.cn/?ifa1c20'
   },
   // ... more partners
 ]);
 
 const creativePartners = ref([
-  {
-    name: '创意设计工作室',
-    logo: '/assets/images/creative-partner1.jpg',
-    description: '专注于创意设计和品牌策划'
-  },
+  // {
+  //   name: '创意设计工作室',
+  //   logo: '/assets/images/creative-partner1.jpg',
+  //   description: '专注于创意设计和品牌策划'
+  // },
   // ... more partners
 ]);
 
 const businessPartners = ref([
-  {
-    name: '商业咨询集团',
-    logo: '/assets/images/business-partner1.jpg',
-    description: '提供专业的商业策略和市场分析'
-  },
+  // {
+  //   name: '商业咨询集团',
+  //   logo: '/assets/images/business-partner1.jpg',
+  //   description: '提供专业的商业策略和市场分析'
+  // },
   // ... more partners
 ]);
 
 const onFinish = values => {
   console.log('Success:', values);
-  message.success('申请已提交，我们会尽快与您联系！');
+  message.info('提交系统暂未完善,请联系QQ:2569224983');
 };
 </script>
 
@@ -112,7 +113,7 @@ const PartnerGrid = {
   },
   template: `
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <a-card v-for="partner in partners" :key="partner.name" hoverable>
+      <a-card v-for="partner in partners" :key="partner.name" hoverable @click="partner.link ? window.open(partner.link, '_blank') : null">
         <template #cover>
           <img :src="partner.logo" :alt="partner.name" class="h-48 object-contain" />
         </template>

@@ -92,7 +92,7 @@ const portfolio = ref([
     category: 'short',
     image: '/assets/banner/1.png',
     tags: ['短视频', '低价'],
-    videoLink: '/assets/videos/1.mp4' // 新增视频链接字段
+    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/1.mp4' // 新增视频链接字段
   },
   {
     id: 2,
@@ -102,7 +102,7 @@ const portfolio = ref([
     category: 'long',
     image: '/assets/banner/2.png',
     tags: ['长视频', '低价'],
-    videoLink: '/assets/videos/2.mp4' // 新增视频链接字段
+    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/2.mp4' // 新增视频链接字段
   },
   {
     id: 3,
@@ -112,7 +112,7 @@ const portfolio = ref([
     category: 'long',
     image: '/assets/banner/3.jpg',
     tags: ['长视频', '定制化'],
-    videoLink: '/assets/videos/3.mp4' // 新增视频链接字段
+    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/3.mp4' // 新增视频链接字段
   },
   {
     id: 4,
@@ -122,7 +122,7 @@ const portfolio = ref([
     category: 'long',
     image: '/assets/banner/4.png',
     tags: ['长视频'],
-    videoLink: '/assets/videos/4.mp4' // 新增视频链接字段
+    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/4.mp4' // 新增视频链接字段
   },
 ]);
 
