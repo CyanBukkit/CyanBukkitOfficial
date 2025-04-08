@@ -37,14 +37,15 @@
 
             <div class="video-container">
               <template v-if="isBilibiliVideo(selectedVideoUrl)">
-                <!-- 不要自动静音 -->
-                <iframe ref="videoPlayer" :src="selectedVideoUrl" controls class="video-element"
+                <!-- 添加autoplay=1参数并确保不静音 -->
+                <iframe ref="videoPlayer" :src="selectedVideoUrl + '&autoplay=0'" controls class="video-element"
                   @loadedmetadata="handleVideoReady" @error="handleVideoError" scrolling="no" border="0"
                   frameborder="no" framespacing="0" allowfullscreen="true" playsinline />
               </template>
               <template v-else>
+                <!-- 确保autoplay和playsinline属性，并移除muted -->
                 <video ref="videoPlayer" :src="selectedVideoUrl" controls class="video-element"
-                  @loadedmetadata="handleVideoReady" @error="handleVideoError" autoplay playsinline muted="false" />
+                  @loadedmetadata="handleVideoReady" @error="handleVideoError" autoplay playsinline />
               </template>
               <div class="control-bar">
                 <button class="control-btn" @click.stop="toggleFullscreen">
@@ -151,7 +152,8 @@ hideWarm();
 const categories = [
   { value: 'all', label: '全部' },
   { value: 'hot', label: '燃' },
-  { value: 'warm', label: '暖' }
+  { value: 'warm', label: '暖' },
+  { value: 'ai', label: '自动化剪辑' }
 ];
 
 const selectedCategory = ref('all');
@@ -208,7 +210,7 @@ const portfolio = ref([
   {
     id: 1,
     title: 'RPG超燃宣传片',
-    description: '没有修改不能修改！一气呵成！从开始制作到发布，必须无修改精准把控效果',
+    description: '口号：没有修改不能修改！一气呵成！从开始制作到发布，必须无修改精准把控效果',
     price: 100,
     category: 'hot',
     image: '/assets/banner/1.png',
@@ -216,44 +218,84 @@ const portfolio = ref([
     videoLink: '//player.bilibili.com/player.html?isOutside=true&aid=113872719584972&bvid=BV1RMfeYrESi&cid=28019788508&p=1' // 新增视频链接字段
   },
   {
-    id: 1,
-    title: '短视频广告型',
-    description: '短视频剪辑',
-    price: 1,
-    category: 'short',
-    image: '/assets/banner/1.png',
-    tags: ['短视频', '低价'],
-    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/1.mp4' // 新增视频链接字段
-  },
-  {
     id: 2,
-    title: '温馨向解说剪辑',
-    description: '优质温馨向视频，有着治愈的旋律',
-    price: 70,
-    category: 'long',
-    image: '/assets/banner/2.png',
-    tags: ['长视频', '低价'],
-    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/2.mp4' // 新增视频链接字段
+    title: '小游戏超燃宣传片',
+    description: '口号：没有修改不能修改！一气呵成！从开始制作到发布，必须无修改精准把控效果',
+    price: 100,
+    category: 'hot',
+    image: '/assets/banner/3.jpg',
+    tags: ['不能返工', '燃', '玄混', '暴力美学'],
+    videoLink: '//player.bilibili.com/player.html?isOutside=true&aid=113496255632730&bvid=BV143UzYUEkT&cid=26801866687&p=1' // 新增视频链接字段
   },
   {
     id: 3,
-    title: '自定义定制剪辑（案例非实际样片也是别人的设计需求制作的）',
-    description: '给予充分的定制化, 风格, 内容全部可定制, 所有内容都将由你来设计, 与客服交谈时, 可以把你的想法说出来, 价格在',
-    price: 120,
-    category: 'long',
-    image: '/assets/banner/3.jpg',
-    tags: ['长视频', '定制化'],
-    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/3.mp4' // 新增视频链接字段
+    title: 'MC 形式的音乐MV ',
+    description: '口号：没有修改不能修改！一气呵成！从开始制作到发布，必须无修改精准把控效果',
+    price: 100,
+    category: 'hot',
+    image: '/assets/banner/4.jpg',
+    tags: ['不能返工', '音乐MV', '玄混'],
+    videoLink: '//player.bilibili.com/player.html?isOutside=true&aid=216299603&bvid=BV11a411K7YZ&cid=784032114&p=1' // 新增视频链接字段
   },
   {
     id: 4,
-    title: '美式',
-    description: '美式蒙太奇效果',
-    price: 240,
-    category: 'long',
-    image: '/assets/banner/4.png',
+    title: '非模板式 生存创意型',
+    description: '口号：不能修改！一气呵成！从开始制作到发布，必须无修改 精准把控暴力美学效果',
+    price: 100,
+    category: 'hot',
+    image: '/assets/banner/5.jpg',
+    tags: ['不能返工', '建筑少MV技术整活多', '玄混'],
+    videoLink: '//player.bilibili.com/player.html?isOutside=true&aid=1402240693&bvid=BV1Sr421t7cb&cid=1480795715&p=1' // 新增视频链接字段
+  },
+  {
+    id: 5,
+    title: '音乐可爱暖模板型',
+    description: '作者擅长做温馨向视频,有着治愈的旋律,开做只需要1到2小时就可以做完!比玄混速度更快',
+    price: 180,
+    category: 'warm',
+    image: '/assets/banner/6.png',
+    tags: ['暖风', '十米', '效率快'],
+    videoLink: '//player.bilibili.com/player.html?isOutside=true&aid=114273342722071&bvid=BV1qpZmY1EGP&cid=29214507179&p=1' // 新增视频链接字段
+  },
+  {
+    id: 6,
+    title: '模板型快速制作',
+    description: '最便宜的人工剪辑模板，1小时内完成，效果非常好',
+    price: 70,
+    category: 'warm',
+    image: '/assets/banner/1.png',
+    tags: ['长视频', '快速'],
+    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/2.mp4' // 新增视频链接字段
+  },
+  {
+    id: 7,
+    title: '美国以及海外常用MC宣传片',
+    description: '这种类型多为老外常用的美学，适合做出海类型的国际服务器的宣传片',
+    price: 300,
+    category: 'hot',
+    image: '/assets/banner/1.png',
     tags: ['长视频'],
     videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/4.mp4' // 新增视频链接字段
+  },
+  {
+    id: 8,
+    title: '自动化剪辑',
+    description: '最便宜的自动化剪辑，需要您提交视频素材',
+    price: 1,
+    category: 'hot',
+    image: '/assets/banner/1.png',
+    tags: ['短视频', '自动化剪辑', '广告'],
+    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/1.mp4' // 新增视频链接字段
+  },
+  {
+    id: 10,
+    title: '素材录制适用于自动化剪辑的素材',
+    description: '仅仅只是路素材录制适用于自动化剪辑的素材',
+    price: 10,
+    category: 'hot',
+    image: '/assets/banner/1.png',
+    tags: ['短视频', '自动化剪辑', '广告'],
+    videoLink: 'https://2.kodo.cyanbukkit.cn/other/video/1.mp4' // 新增视频链接字段
   },
 ]);
 
